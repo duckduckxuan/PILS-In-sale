@@ -10,5 +10,4 @@ pip install ultralytics
 yolo detect train data=garbage.yaml model=yolov8n.pt epochs=50 imgsz=640 project=runs/detect name=best
 
 # Tester ton modèle (source=0 => caméra d'ordi; source=1 => caméra USB)
-
 yolo detect predict model=runs/detect/best.pt source=0 show=True

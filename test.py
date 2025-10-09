@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO("runs/detect/best.pt")
+model = YOLO("runs/detect/best/weights/best.pt")
 
 model.predict(
     source=0,      # use 0 for webcam
@@ -9,3 +9,4 @@ model.predict(
     save=True,
     conf=0.5
 )
+

@@ -22,8 +22,8 @@ pip install -r requirements.txt
 python3 download.py
 
 ### ⑥ Convertir le dataset
-exécuter la commande dessous
-
+exécuter la commande dessous:
+cd ..
 python .\taco_to_yolo_frbins_unified.py `
   --ann ".\TACO\data\annotations.json" `
   --images-root ".\TACO\data" `

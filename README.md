@@ -21,13 +21,15 @@ pip install -r requirements.txt
 ### ⑤ Télécharger les images et les annotations
 python3 download.py
 
+### ⑥ Convertir le dataset
+Ici modifier les routes, puis exécuter la commande dessous
+python taco_to_yolo_frbins_unified.py --ann "path_to\TACO\data\annotations.json" --images-root "path_to\TACO\data" --out "path_to\datasets\taco_yolo_fr" --val-ratio 0.2 --copy-mode copy --verbose
+
 ## Entraîner le modèle YOLOv8
 ### ① Installation de YOLOv8
 pip install ultralytics
 
-### ② Télécharger garbage.yaml
-
-### ③ Lancer l’entraînement
+### ② Lancer l’entraînement
 yolo detect train data=garbage.yaml model=yolov8n.pt epochs=50 imgsz=640 project=runs/detect name=best
 
 ### Si le yolo n'est pas bien paramétré

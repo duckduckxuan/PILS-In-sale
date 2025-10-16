@@ -22,8 +22,15 @@ pip install -r requirements.txt
 python3 download.py
 
 ### ⑥ Convertir le dataset
-Ici modifier les routes, puis exécuter la commande dessous
-python taco_to_yolo_frbins_unified.py --ann "path_to\TACO\data\annotations.json" --images-root "path_to\TACO\data" --out "path_to\datasets\taco_yolo_fr" --val-ratio 0.2 --copy-mode copy --verbose
+exécuter la commande dessous
+
+python .\taco_to_yolo_frbins_unified.py `
+  --ann ".\TACO\data\annotations.json" `
+  --images-root ".\TACO\data" `
+  --out ".\datasets\taco_yolo_fr" `
+  --val-ratio 0.2 `
+  --copy-mode copy `
+  --verbose
 
 ## Entraîner le modèle YOLOv8
 ### ① Installation de YOLOv8

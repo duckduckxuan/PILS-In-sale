@@ -1,0 +1,11 @@
+datasets/**
+TACO/**
+runs/**
+*.pt
+*.pth
+*.onnx
+*.npz
+*.npy
+__pycache__/
+*.ipynb_checkpoints/
+.DS_Store

@@ -39,17 +39,7 @@ python .\taco_to_yolo_frbins_unified.py `
 pip install ultralytics
 
 ### ② Lancer l’entraînement
-yolo detect train data=garbage.yaml model=yolov8n.pt epochs=50 imgsz=640 project=runs/detect name=best
-
-### Si le yolo n'est pas bien paramétré
 exécuter 'train.py'
 
 ## Tester le modèle entraîné
-### Avec la caméra intégrée
-yolo detect predict model=runs/detect/best/weights/best.pt source=0 show=True
-
-### Avec une caméra USB
-yolo detect predict model=runs/detect/best/weights/best.pt source=1 show=True
-
-### Si le yolo n'est pas bien paramétré
 exécuter 'test.py'

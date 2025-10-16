@@ -7,21 +7,21 @@ Ce projet entraîne un modèle **YOLOv8** pour détecter et classifier différen
 L’objectif est de permettre la reconnaissance automatique d’objets jetés (plastique, métal, papier, etc.) afin de faire la classification automatiquement.
 
 ## Télécharger le dataset TACO
-### 1.Ouvrir ton terminal
+### 1. Ouvrir ton terminal
 
-### 2.Cloner le dépôt officiel TACO
+### 2. Cloner le dépôt officiel TACO
 git clone https://github.com/pedropro/TACO.git
 
-### 3.Entrer dans le dossier
+### 3. Entrer dans le dossier
 cd TACO
 
-### 4.Installer les dépendances requises
+### 4. Installer les dépendances requises
 pip install -r requirements.txt
 
-### 5.Télécharger les images et les annotations
+### 5. Télécharger les images et les annotations
 python3 download.py
 
-### 6.Convertir le dataset
+### 6. Convertir le dataset
 exécuter la commande dessous:
 
 cd ..
@@ -35,7 +35,7 @@ python .\taco_to_yolo_frbins_unified.py `
   --verbose
 
 ## Entraîner le modèle YOLOv8
-### 1.Installation de YOLOv8
+### 1. Installation de YOLOv8
 pip install ultralytics
 
 ### 2.Lancer l’entraînement

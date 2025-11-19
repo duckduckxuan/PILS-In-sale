@@ -1,0 +1,16 @@
+train: D:/important/study 2025-2026/PILS/datasets/taco_yolo_fr/train/images
+val: D:/important/study 2025-2026/PILS/datasets/taco_yolo_fr/val/images
+
+nc: 4
+
+names:
+  - verre
+  - emballages
+  - biodéchets
+  - résiduel
+
+class_weights:
+  - 2.0     # verre
+  - 1.0     # emballages
+  - 5.0     # biodéchets
+  - 0.2     # résiduel
